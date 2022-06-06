@@ -1,0 +1,19 @@
+{
+  "name": "solid-profile",
+  "version": "0.1.0",
+  "description": "Solid app to view/modify a FOAF profile",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThirstyHead/solid-profile.git"
+  },
+  "author": "Scott Davis <scott@thirstyhead.com> (https://thirstyhead.com/)",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/ThirstyHead/solid-profile/issues"
+  },
+  "homepage": "https://github.com/ThirstyHead/solid-profile#readme"
+}
