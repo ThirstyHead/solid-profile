@@ -2,10 +2,9 @@
   "name": "solid-profile",
   "version": "0.1.0",
   "description": "Solid app to view/modify a FOAF profile",
-  "main": "www/index.js",
   "scripts": {
     "start": "parcel www/index.html --open",
-    "build": "parcel build www/index.html"
+    "build": "parcel build www/*.* www/raw/*.*"
   },
   "repository": {
     "type": "git",
