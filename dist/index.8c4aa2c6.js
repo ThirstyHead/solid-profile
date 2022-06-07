@@ -506,14 +506,26 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchProfile", ()=>fetchProfile);
+parcelHelpers.export(exports, "fetchProfileWithSolid", ()=>fetchProfileWithSolid);
 var _solidClient = require("@inrupt/solid-client");
 const solidProfileForm = document.querySelector('form[name="solid-profile"]');
 solidProfileForm.addEventListener("submit", fetchProfile);
 function fetchProfile(event) {
     event.preventDefault();
     const profileUrl = event.target.elements["profile-url"].value;
-    const profile = event.target.elements["profile"];
-    fetch(profileUrl).then((response)=>response.text()).then((data)=>profile.value = data);
+    const rawProfile = event.target.elements["raw-profile"];
+    const solidProfile = event.target.elements["solid-profile"];
+    // raw fetch
+    fetch(profileUrl).then((response)=>response.text()).then((data)=>rawProfile.value = data);
+    fetchProfileWithSolid(profileUrl).then((data)=>{
+        solidProfile.value = JSON.stringify(data, null, 2);
+        console.dir(data);
+    });
+}
+async function fetchProfileWithSolid(profileUrl) {
+    const dataset = await (0, _solidClient.getSolidDataset)(profileUrl);
+    const profile = (0, _solidClient.getThing)(dataset, profileUrl);
+    return profile;
 }
 
 },{"@inrupt/solid-client":"qonTW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"qonTW":[function(require,module,exports) {
