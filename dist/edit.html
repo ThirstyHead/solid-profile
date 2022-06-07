@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Scott Davis <scott@thirstyhead.com>">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <style>label {
+  font-weight: bold;
+  display: block;
+}
+
+</style>
+
+    <script src="/edit.918aeb27.js" defer=""></script>
+  </head>
+
+  <body>
+    <h1>Edit Profile</h1>
+    <p><a href="/index.html">Home</a> | Edit Profile</p> 
+
+    <form name="solid-profile">
+      <fieldset>
+        <legend>Solid Profile</legend>
+        <label for="status">Status</label>
+        <output name="status" id="status">Not logged in</output>
+
+        <br><br>
+        <label for="identity-provider">Identity Provider</label>
+        <input type="url" id="identity-provider" name="identity-provider" value="https://pods.littlepath.org/">
+        <input type="submit" value="Login">
+
+
+      </fieldset>
+    </form>
+    
+  </body>
+</html>

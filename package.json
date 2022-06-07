@@ -4,7 +4,7 @@
   "description": "Solid app to view/modify a FOAF profile",
   "scripts": {
     "start": "parcel www/index.html --open",
-    "build": "parcel build www/*.* www/raw/*.*"
+    "build": "parcel build www/*.*"
   },
   "repository": {
     "type": "git",
