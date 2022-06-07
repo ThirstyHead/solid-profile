@@ -2,9 +2,10 @@
   "name": "solid-profile",
   "version": "0.1.0",
   "description": "Solid app to view/modify a FOAF profile",
-  "main": "index.html",
+  "main": "www/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel www/index.html --open",
+    "build": "parcel build www/index.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/ThirstyHead/solid-profile/issues"
   },
-  "homepage": "https://github.com/ThirstyHead/solid-profile#readme"
+  "homepage": "https://github.com/ThirstyHead/solid-profile#readme",
+  "dependencies": {
+    "@inrupt/solid-client": "^1.23.1",
+    "@inrupt/solid-client-authn-browser": "^1.12.0",
+    "@inrupt/vocab-common-rdf": "^1.0.5"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.6.0",
+    "process": "^0.11.10"
+  }
 }
