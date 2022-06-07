@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+         xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+	     xmlns:loc="http://simile.mit.edu/2005/05/ontologies/location#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:wot="http://xmlns.com/wot/0.1/">
+
+<foaf:Person rdf:about = "https://w3id.org/people/bsletten">
+   <rdf:value>Brian Sletten, brian@bosatsu.net</rdf:value>
+   <foaf:name>Brian Sletten</foaf:name>
+   <foaf:mbox rdf:resource="mailto:brian@bosatsu.net"/>
+   <foaf:img rdf:resource="http://bosatsu.net/images/briansletten.jpg"/>
+   <foaf:workInfoHomepage rdf:resource="http://bosatsu.net"/>
+   <foaf:workplaceHomepage rdf:resource="http://bosatsu.net"/>
+   
+   <foaf:givenname>Brian</foaf:givenname>
+   <foaf:family_name>Sletten</foaf:family_name>
+   <foaf:dateOfBirth>1972-05-26</foaf:dateOfBirth>
+   <foaf:aimChatID>Abbagliato</foaf:aimChatID>
+   <foaf:homepage rdf:resource="http://www.bosatsu.net"/>
+   <foaf:schoolHomepage rdf:resource="http://www.wm.edu"/>
+   <foaf:weblog dc:title="Vita Contemplativa" rdf:resource="http://vita-contemplativa.blogspot.com"/>
+   
+   <foaf:interest>
+       <rdf:Description rdf:about="http://www.aosd.net/" dc:title="Aspect-Oriented Programming"/>
+   </foaf:interest>
+   <foaf:interest>
+       <rdf:Description rdf:about="http://www.w3.org/RDF/" dc:title="Resource Description Framework (RDF)"/>
+   </foaf:interest>
+   <foaf:interest>
+       <rdf:Description rdf:about="http://www.w3.org/Metadata/" dc:title="Metadata"/>
+   </foaf:interest>
+   <foaf:interest>
+       <rdf:Description rdf:about="http://www.w3.org/2000/01/sw/" dc:title="Semantic Web"/>
+   </foaf:interest>
+   <foaf:wishlist rdf:resource="http://amazon.com/gp/registry/24002YZI6GE7H"/>
+
+   <foaf:knows rdf:resource="http://zepheira.com/team/eric/#me"/>
+   <foaf:knows rdf:resource="http://zepheira.com/team/dave/#me"/>
+   <foaf:knows rdf:resource="http://zepheira.com/team/bern/#me"/>
+   <foaf:knows rdf:resource="http://zepheira.com/team/kathy/#me"/>
+   <foaf:knows>
+     <foaf:Person rdf:about="http://ericaxel.com/foaf.rdf#me">
+          <foaf:name>Eric Franzon</foaf:name>
+          <rdfs:seeAlso rdf:resource="http://ericaxel.com/foaf.rdf"/>       
+     </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+     <foaf:Person rdf:about="http://norman.walsh.name/knows/who#norman-walsh">
+        <foaf:name>Norm Walsh</foaf:name>
+        <rdfs:seeAlso rdf:resource="http://norman.walsh.name/foaf.rdf"/>    
+     </foaf:Person>
+   </foaf:knows>   
+   <foaf:knows>
+     <foaf:Person rdf:about="http://tomayac.com/thomas_steiner.rdf#me">
+        <foaf:name>Thomas Steiner</foaf:name>
+        <rdfs:seeAlso rdf:resource="http://tomayac.com/thomas_steiner.rdf"/>    
+     </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+     <foaf:Person rdf:about="http://www.snee.com/bob/foaf.rdf#bob">
+        <foaf:name>Bob DuCharme</foaf:name>
+        <rdfs:seeAlso rdf:resource="http://www.snee.com/bob/foaf.rdf"/>    
+     </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+          <foaf:name>Ora Lassila</foaf:name>
+          <rdfs:seeAlso rdf:resource="http://lassila.org/ora.rdf#me"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+          <foaf:name>James Hendler</foaf:name>
+          <rdfs:seeAlso rdf:resource="http://www.cs.rpi.edu/%7Ehendler/foaf.rdf"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Ian Davis</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://iandavis.com/id/me.rdf"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Dave McLure</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://purl.org/net/dmclure"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Mike Amundsen</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://mamund.com/foaf.rdf#me"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Bob DuCharme</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://www.snee.com/bob/foaf.rdf"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Glen Daniels</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://thoughtcraft.com/~glen/foaf.xml"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Eben Hewitt</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://www.ebenhewitt.com/eben.rdf"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Thomas Steiner</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://tomayac.com/thomas_steiner.rdf#me"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+			<foaf:name>Carin Meier</foaf:name>
+			<rdfs:seeAlso rdf:resource="http://purl.org/net/cmeier"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+       <foaf:name>Sean Cier</foaf:name>
+       <rdfs:seeAlso rdf:resource="http://posthorizon.com/scier/foaf.rdf"/>
+       </foaf:Person>           
+   </foaf:knows>
+   <foaf:knows>
+       <foaf:Person>
+           <foaf:name>Paul Gearon</foaf:name>
+           <foaf:mbox_sha1sum>9ad97b1210160f66f7d2994c1487eb87965a99aa</foaf:mbox_sha1sum>
+           <rdfs:seeAlso rdf:resource="http://gearon.blogspot.com/"/>
+       </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+      <foaf:Person>
+          <foaf:name>Andrae Muys</foaf:name>
+          <foaf:mbox_sha1sum>6965f3cd97f70281d4ef4d9f0218751d0387bcaf</foaf:mbox_sha1sum>
+          <rdfs:seeAlso rdf:resource="http://etymon.blogspot.com/"/>
+      </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+      <foaf:Person>
+          <foaf:name>Cengiz Caglar</foaf:name>
+          <foaf:mbox_sha1sum>9b1f8b5b9a4dc52944602d6a3cad6a55b3fa7a48</foaf:mbox_sha1sum>
+          <rdfs:seeAlso rdf:resource="http://bosatsu.net/foaf/cengiz.rdf"/>
+      </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+      <foaf:Person>
+          <foaf:name>James McLeod</foaf:name>
+          <foaf:mbox_sha1sum>29f11fd3268c7dde16e9fdc4bfe2d938f10f7646</foaf:mbox_sha1sum>
+          <rdfs:seeAlso rdf:resource="http://bosatsu.net/foaf/james.rdf"/>
+      </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+      <foaf:Person>
+          <foaf:name>Laurent Tonnelier</foaf:name>
+          <foaf:mbox_sha1sum>c89511f94f2623f3fa117f35040108d6db737bb0</foaf:mbox_sha1sum>
+          <rdfs:seeAlso rdf:resource="http://bosatsu.net/foaf/laurent.rdf"/>
+      </foaf:Person>
+   </foaf:knows>
+   <foaf:knows>
+      <foaf:Person>
+          <foaf:name>Stewart Abel</foaf:name>
+          <foaf:mbox_sha1sum>6bb6427f8abe375195a9ee6c148de9380d1287ea</foaf:mbox_sha1sum>
+          <rdfs:seeAlso rdf:resource="http://bosatsu.net/foaf/stewart.rdf"/>
+      </foaf:Person>
+   </foaf:knows>       
+</foaf:Person>
+
+
+    <foaf:PersonalProfileDocument rdf:about="http://bosatsu.net/foaf/brian.rdf">
+	    <foaf:maker rdf:resource="https://w3id.org/people/bsletten"/>
+        <foaf:primaryTopic rdf:resource="https://w3id.org/people/bsletten"/>
+    </foaf:PersonalProfileDocument>
+
+<rdf:Description rdf:about="http://zepheira.com/team/eric/#me">
+  <rdf:value>Eric Miller</rdf:value>
+  <rdfs:seeAlso rdf:resource="http://zepheira.com/team/eric/contact.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://zepheira.com/team/dave/#me">
+  <rdf:value>Dave Wood</rdf:value>
+  <rdfs:seeAlso rdf:resource="http://zepheira.com/team/dave/dave.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://zepheira.com/team/bern/#me">
+  <rdf:value>Bernadette Hyland</rdf:value>
+  <rdfs:seeAlso rdf:resource="http://zepheira.com/team/bern/foaf.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://zepheira.com/team/kathy/#me">
+  <rdf:value>Kathy MacDougall</rdf:value>
+  <rdfs:seeAlso rdf:resource="http://zepheira.com/team/kathy/kathy.rdf"/>
+</rdf:Description>
+
+</rdf:RDF>
