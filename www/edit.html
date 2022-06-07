@@ -22,9 +22,9 @@
     <h1>Edit Profile</h1>
     <p><a href="index.html">Home</a> | Edit Profile</p> 
 
-    <form name='solid-profile'>
+    <form name='solid-login'>
       <fieldset>
-        <legend>Solid Profile</legend>
+        <legend>Solid Login</legend>
         <label for="status">Status</label>
         <output name="status" id="status">Not logged in</output>
 
@@ -33,8 +33,26 @@
         <input type='url' 
                id='identity-provider' 
                name='identity-provider'
-               value='https://pods.littlepath.org/'></input>
-        <input type='submit' value='Login'></input>
+               value='https://pods.littlepath.org/'>
+        <input type='submit' value='Login'>
+      </fieldset>
+    </form>
+
+    <form name='solid-profile'>
+      <fieldset>
+        <legend>Solid Profile</legend>
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for='givenName'>Given Name</label>
+        <input type='text' name='givenName' id='givenName'>
+               
+        <label for='familyName'>Family Name</label>
+        <input type='text' name='familyName' id='familyName'>
+
+        <br>
+        <input type='submit' value='Update'>
 
 
       </fieldset>
