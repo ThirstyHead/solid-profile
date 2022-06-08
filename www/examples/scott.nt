@@ -1,0 +1,12 @@
+<http://njh.me/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/PersonalProfileDocument> .
+<http://njh.me/> <http://xmlns.com/foaf/0.1/maker> <http://njh.me/#me> .
+<http://njh.me/> <http://xmlns.com/foaf/0.1/primaryTopic> <http://njh.me/#me> .
+<http://njh.me/> <http://webns.net/mvcb/generatorAgent> <http://www.ldodds.com/foaf/foaf-a-matic> .
+<http://njh.me/> <http://webns.net/mvcb/errorReportsTo> <mailto:leigh@ldodds.com> .
+<http://njh.me/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://njh.me/#me> <http://xmlns.com/foaf/0.1/name> "Scott Davis" .
+<http://njh.me/#me> <http://xmlns.com/foaf/0.1/givenname> "Scott" .
+<http://njh.me/#me> <http://xmlns.com/foaf/0.1/family_name> "Davis" .
+<http://njh.me/#me> <http://xmlns.com/foaf/0.1/nick> "scottdavis99" .
+<http://njh.me/#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "bf249742f2fbc0b622a6477557174000c86a02cd" .
+<http://njh.me/#me> <http://xmlns.com/foaf/0.1/homepage> <https://thirstyhead.com> .

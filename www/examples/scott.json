@@ -1,0 +1,79 @@
+[
+  {
+    "@id": "http://njh.me/",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/PersonalProfileDocument"
+    ],
+    "http://xmlns.com/foaf/0.1/maker": [
+      {
+        "@id": "http://njh.me/#me"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/primaryTopic": [
+      {
+        "@id": "http://njh.me/#me"
+      }
+    ],
+    "http://webns.net/mvcb/generatorAgent": [
+      {
+        "@id": "http://www.ldodds.com/foaf/foaf-a-matic"
+      }
+    ],
+    "http://webns.net/mvcb/errorReportsTo": [
+      {
+        "@id": "mailto:leigh@ldodds.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://njh.me/#me",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Scott Davis"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/givenname": [
+      {
+        "@value": "Scott"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/family_name": [
+      {
+        "@value": "Davis"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/nick": [
+      {
+        "@value": "scottdavis99"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/mbox_sha1sum": [
+      {
+        "@value": "bf249742f2fbc0b622a6477557174000c86a02cd"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "https://thirstyhead.com"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ldodds.com/foaf/foaf-a-matic"
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Person"
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/PersonalProfileDocument"
+  },
+  {
+    "@id": "https://thirstyhead.com"
+  },
+  {
+    "@id": "mailto:leigh@ldodds.com"
+  }
+]
