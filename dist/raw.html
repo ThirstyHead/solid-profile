@@ -1,1 +1,56 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Raw Profile</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Scott Davis <scott@thirstyhead.com>"><meta name="description" content=""><meta name="keywords" content=""><style>#profile-url,#profile{width:50%}label{margin-top:1em;font-weight:700;display:block}</style><script type="module" src="/edit.cf919d03.js"></script><script type="module" src="/raw.721ccc01.js"></script></head><body> <h1>Raw Profile</h1> <p><a href="/index.html">Home</a> | Raw Profile</p> <p>Identities on a Solid Pod are defined by a FOAF (<a href="http://xmlns.com/foaf/spec/">Friend of a Friend</a>) file.</p> <form name="solid-profile"> <fieldset> <legend>Solid Profile</legend> <label for="profile-url">Profile URL</label> <input type="url" id="profile-url" name="profile-url" value="https://pods.littlepath.org/scott/profile/card#me"> <input type="submit" value="View Profile"> <br> <label for="raw-profile">Raw Profile</label> <textarea id="raw-profile" name="raw-profile"></textarea> <br> <label for="solid-profile">Solid Profile</label> <textarea id="solid-profile" name="solid-profile"></textarea> </fieldset> </form> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <!-- http://xmlns.com/foaf/spec/ -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Raw Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Scott Davis <scott@thirstyhead.com>">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <style>#profile-url, #profile {
+  width: 50%;
+}
+
+label {
+  margin-top: 1em;
+  font-weight: bold;
+  display: block;
+}
+
+</style>
+
+    <script src="/raw.a2904c0b.js" defer=""></script>
+
+  </head>
+
+  <body>
+    <h1>Raw Profile</h1>
+    <p><a href="/index.html">Home</a> | Raw Profile</p> 
+    <hr>
+    
+    <p>Identities on a Solid Pod are defined by a FOAF (<a href="http://xmlns.com/foaf/spec/">Friend of a Friend</a>) file.</p>
+    <p>To generate a FOAF file, visit the online <a href="http://ldodds.com/foaf/foaf-a-matic.html">FOAF-a-matic</a>.</p>
+    <p>To convert RDF files to Turtle (.ttl) or JSON-LD, visit the online <a href="https://www.easyrdf.org/converter">EasyRDF Converter</a>.</p>
+
+    <form name="solid-profile">
+      <fieldset>
+        <legend>Solid Profile</legend>
+        <label for="profile-url">Profile URL</label>
+        <input type="url" id="profile-url" name="profile-url" value="https://pods.littlepath.org/scott/profile/card#me">
+        <input type="submit" value="View Profile">
+
+        <br>
+        <label for="raw-profile">Raw Profile</label>
+        <textarea id="raw-profile" name="raw-profile"></textarea>
+
+        <br>
+        <label for="solid-profile">Solid Profile</label>
+        <textarea id="solid-profile" name="solid-profile"></textarea>
+
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+
+<http://njh.me/>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://njh.me/#me> ;
+  foaf:primaryTopic <http://njh.me/#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<http://njh.me/#me>
+  a foaf:Person ;
+  foaf:name "Scott Davis" ;
+  foaf:givenname "Scott" ;
+  foaf:family_name "Davis" ;
+  foaf:nick "scottdavis99" ;
+  foaf:mbox_sha1sum "bf249742f2fbc0b622a6477557174000c86a02cd" ;
+  foaf:homepage <https://thirstyhead.com> .
