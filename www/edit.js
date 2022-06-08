@@ -1,4 +1,4 @@
-import { getSolidDataset, getStringNoLocale, getThing } from '@inrupt/solid-client';
+import { getSolidDataset, getStringNoLocale, getThing, setStringNoLocale, setThing, saveSolidDatasetAt } from '@inrupt/solid-client';
 import { Session } from '@inrupt/solid-client-authn-browser';
 import {FOAF} from '@inrupt/vocab-common-rdf';
 
@@ -49,11 +49,18 @@ async function fetchProfile(){
 }
 
 function populateProfileForm(profile){
-    solidProfileForm['name'] = getStringNoLocale(profile, FOAF.name);
-    solidProfileForm['givenName'] = getStringNoLocale(profile, FOAF.givenName);
-    solidProfileForm['familyName'] = getStringNoLocale(profile, FOAF.familyName);
+    solidProfileForm['name'].value = getStringNoLocale(profile, FOAF.name);
+    solidProfileForm['givenName'].value = getStringNoLocale(profile, FOAF.givenName);
+    solidProfileForm['familyName'].value = getStringNoLocale(profile, FOAF.familyName);
 }
 
-async function updateProfile(){
-
+async function updateProfile(event){
+    event.preventDefault();
+    profile = setStringNoLocale(profile, FOAF.name, solidProfileForm['name'].value);
+    profile = setStringNoLocale(profile, FOAF.givenName, solidProfileForm['givenName'].value);
+    profile = setStringNoLocale(profile, FOAF.familyName, solidProfileForm['familyName'].value);
+    profileDataset = setThing(profileDataset, profile);
+    await saveSolidDatasetAt(session.info.webId, profileDataset, {
+        fetch: session.fetch
+    });
 }

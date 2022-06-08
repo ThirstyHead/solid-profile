@@ -540,11 +540,20 @@ async function fetchProfile() {
     return profile;
 }
 function populateProfileForm(profile2) {
-    solidProfileForm["name"] = (0, _solidClient.getStringNoLocale)(profile2, (0, _vocabCommonRdf.FOAF).name);
-    solidProfileForm["givenName"] = (0, _solidClient.getStringNoLocale)(profile2, (0, _vocabCommonRdf.FOAF).givenName);
-    solidProfileForm["familyName"] = (0, _solidClient.getStringNoLocale)(profile2, (0, _vocabCommonRdf.FOAF).familyName);
+    solidProfileForm["name"].value = (0, _solidClient.getStringNoLocale)(profile2, (0, _vocabCommonRdf.FOAF).name);
+    solidProfileForm["givenName"].value = (0, _solidClient.getStringNoLocale)(profile2, (0, _vocabCommonRdf.FOAF).givenName);
+    solidProfileForm["familyName"].value = (0, _solidClient.getStringNoLocale)(profile2, (0, _vocabCommonRdf.FOAF).familyName);
 }
-async function updateProfile() {}
+async function updateProfile(event) {
+    event.preventDefault();
+    profile = (0, _solidClient.setStringNoLocale)(profile, (0, _vocabCommonRdf.FOAF).name, solidProfileForm["name"].value);
+    profile = (0, _solidClient.setStringNoLocale)(profile, (0, _vocabCommonRdf.FOAF).givenName, solidProfileForm["givenName"].value);
+    profile = (0, _solidClient.setStringNoLocale)(profile, (0, _vocabCommonRdf.FOAF).familyName, solidProfileForm["familyName"].value);
+    profileDataset = (0, _solidClient.setThing)(profileDataset, profile);
+    await (0, _solidClient.saveSolidDatasetAt)(session.info.webId, profileDataset, {
+        fetch: session.fetch
+    });
+}
 
 },{"@inrupt/solid-client":"qonTW","@inrupt/solid-client-authn-browser":"aAD3B","@inrupt/vocab-common-rdf":"8X2Ta"}],"qonTW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
